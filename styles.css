@@ -1,0 +1,244 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 40px;
+}
+
+.app-icon {
+    margin-bottom: 20px;
+}
+
+.app-icon img {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Lists styles */
+.features-list,
+.tips-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li,
+.tips-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 1.1rem;
+    color: #555;
+    position: relative;
+    padding-left: 30px;
+}
+
+.features-list li:before,
+.tips-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.features-list li:last-child,
+.tips-list li:last-child {
+    border-bottom: none;
+}
+
+/* FAQ styles */
+.faq-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-item h3:hover {
+    color: #667eea;
+}
+
+.faq-item p {
+    margin: 0;
+    color: #666;
+}
+
+/* Contact section styles */
+.contact-section {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-left: 4px solid #fff;
+}
+
+.contact-section h2 {
+    color: white;
+}
+
+.contact-section p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+.contact-info a:hover {
+    border-color: #fff;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 2px solid #f0f0f0;
+    margin-top: 40px;
+    color: #7f8c8d;
+}
+
+.footer p {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .header {
+        padding: 30px 0;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .section {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .main-content {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .section {
+        padding: 15px;
+    }
+    
+    .features-list li,
+    .tips-list li {
+        font-size: 1rem;
+        padding: 10px 0 10px 25px;
+    }
+}
